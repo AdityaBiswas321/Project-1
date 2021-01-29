@@ -1,0 +1,23 @@
+<% if(success && success.length) {%>
+<!-- success is an empty array when empty -->
+<!-- zero length is falsy -->
+<!-- prevents a blank green alert -->
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <%= success %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+</div>
+
+<% } %>
+
+<% if(error && error.length) {%>
+<!-- success is an empty array when empty -->
+<!-- zero length is falsy -->
+<!-- prevents a blank green alert -->
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <%= error %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+</div>
+
+<% } %>
